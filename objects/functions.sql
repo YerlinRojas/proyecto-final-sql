@@ -120,6 +120,3 @@ SELECT CalculateTotalAppointmentHoursByPatient(1) AS total_appointment_hours_for
 -- CALL
 SELECT AddAvailableDays(3, '2024-04-20', '2024-04-30', 1) AS message;
 
-SELECT
-* FROM CENTRALMEDICAL_DB.AVAILABILITYDATE;
-
