@@ -1,5 +1,7 @@
 -- >>>>>>>>>>>>>>>>>>>>>> VIEWS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 -- VISTAS CITAS POR ESTADO
+USE centralmedical_db; 
+
 CREATE VIEW citas_por_estado AS
 SELECT status, COUNT(*) AS cantidad_citas
 FROM appointments

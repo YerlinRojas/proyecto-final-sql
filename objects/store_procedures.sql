@@ -1,6 +1,8 @@
 -- >>>>>>>>>>>>>>>>>>>>>> STORED PROCEDURES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 -- PROGAMAR CITAS EN LA TABLA APPOIMENTS
+USE centralmedical_db; 
+
 DROP PROCEDURE IF EXISTS ScheduleAppointment;
 DELIMITER //
 

@@ -1,6 +1,8 @@
 -- >>>>>>>>>>>>>>>>>>>>>> TRIGGERS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 -- VERIFICA SI EL EMAIL YA SE ENCUENTRA REGISTRADO RETORNA ERROR 
+USE centralmedical_db; 
+
 DROP TRIGGER IF EXISTS before_insert_patient_email_check;
 DELIMITER //
 

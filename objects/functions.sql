@@ -1,5 +1,7 @@
 -- >>>>>>>>>>>>>>>>>>>>>> FUNCTIONS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 -- CANTIDAD DE HORAS DE TERAPIA POR PACIENTE
+USE centralmedical_db; 
+
 DROP FUNCTION IF EXISTS CalculateTotalTherapyHoursByPatient;
 DELIMITER //
 

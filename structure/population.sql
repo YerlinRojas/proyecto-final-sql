@@ -1,6 +1,8 @@
 
 -- POPULATION
 
+USE centralmedical_db; 
+
 INSERT INTO patients(
 	id_patient,
     first_name,
