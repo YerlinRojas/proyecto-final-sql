@@ -37,9 +37,9 @@ up:
 objects:
 	@echo "Create objects in database"
 
-docker exec -it $(SERVICE_NAME) mysql -u root -p$(PASSWORD) -e "source ./objects/functions.sql; source ./objects/triggers.sql; source ./objects/stored_procedures.sql; source ./objects/views.sql; source ./objects/roles_users.sql; " 
+	docker exec -it $(SERVICE_NAME) mysql -u root -p$(PASSWORD) -e "source ./objects/functions.sql; source ./objects/triggers.sql; source ./objects/stored_procedures.sql; source ./objects/views.sql; source ./objects/roles_users.sql; " 
 
-@echo "Process completed"
+	@echo "Process completed"
 
 
 test-db:
