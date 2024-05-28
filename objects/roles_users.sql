@@ -8,8 +8,6 @@ GRANT ALL PRIVILEGES ON centralmedical_db.* TO 'admin_super'@'%' WITH GRANT OPTI
 
 FLUSH PRIVILEGES;
 
-USE centralmedical_db;
-
 -- CREACIÓN DE ROLES
 CREATE ROLE role_select_vistas;
 CREATE ROLE role_doctors;
