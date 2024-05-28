@@ -1,12 +1,12 @@
 USE centralmedical_db; 
 
 -- CREATE USER
-CREATE USER 'admin_super'@'%' IDENTIFIED BY 'password';
+-- CREATE USER 'admin_super'@'%' IDENTIFIED BY 'password';
 
 -- GRANT ALL PRIVILEGES ON centralmedical_db.* TO 'admin_super'@'%'
-GRANT ALL PRIVILEGES ON centralmedical_db.* TO 'admin_super'@'%' WITH GRANT OPTION;
+-- GRANT ALL PRIVILEGES ON centralmedical_db.* TO 'admin_super'@'%' WITH GRANT OPTION;
 
-FLUSH PRIVILEGES;
+-- FLUSH PRIVILEGES;
 
 -- CREACIÓN DE ROLES
 CREATE ROLE role_select_vistas;
