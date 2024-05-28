@@ -36,10 +36,11 @@ up:
 
 objects:
 	@echo "Create objects in database"
-	@for file in $(FILES); do \
-	    echo "Process $$file and add to the database: $(DATABASE_NAME)"; \
-	docker exec -it mysql  mysql -u root -p$(PASSWORD) -e "source $$file"; \
-	done
+
+docker exec -it $(SERVICE_NAME) mysql -u root -p$(PASSWORD) -e "source ./objects/functions.sql; source ./objects/triggers.sql; source ./objects/stored_procedures.sql; source ./objects/views.sql; source ./objects/roles_users.sql; " 
+
+@echo "Process completed"
+
 
 test-db:
 	@echo "Testing the tables"
